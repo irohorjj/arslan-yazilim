@@ -3,45 +3,51 @@ import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <h1>Arslan Yazılım</h1>
-        <p className="tagline">
-          Profesyonel Yazılım Çözümleri
-        </p>
+    <div className="app">
+      <header className="header">
+        <div className="container">
+          <h1>Arslan Yazılım</h1>
+          <p>Profesyonel Yazılım Çözümleri</p>
+        </div>
       </header>
-      
-      <main className="App-main">
+
+      <main>
         <section className="services">
-          <h2>Hizmetlerimiz</h2>
-          <div className="service-grid">
-            <div className="service-item">
-              <h3>Web Geliştirme</h3>
-              <p>Modern ve responsive web uygulamaları</p>
-            </div>
-            <div className="service-item">
-              <h3>Mobil Uygulama</h3>
-              <p>iOS ve Android için native uygulamalar</p>
-            </div>
-            <div className="service-item">
-              <h3>Yazılım Danışmanlığı</h3>
-              <p>Profesyonel yazılım danışmanlık hizmetleri</p>
+          <div className="container">
+            <h2>Hizmetlerimiz</h2>
+            <div className="services-grid">
+              <div className="service-card">
+                <h3>Web Geliştirme</h3>
+                <p>Modern ve responsive web uygulamaları geliştiriyoruz.</p>
+              </div>
+              <div className="service-card">
+                <h3>Mobil Uygulama</h3>
+                <p>iOS ve Android için native mobil uygulamalar.</p>
+              </div>
+              <div className="service-card">
+                <h3>Yazılım Danışmanlığı</h3>
+                <p>Profesyonel yazılım danışmanlığı hizmetleri.</p>
+              </div>
             </div>
           </div>
         </section>
 
         <section className="contact">
-          <h2>İletişim</h2>
-          <p>Projeleriniz için bizimle iletişime geçin</p>
-          <div className="contact-info">
-            <p>Email: info@arslanyazilim.com</p>
-            <p>Tel: +90 (555) 123 4567</p>
+          <div className="container">
+            <h2>İletişim</h2>
+            <div className="contact-info">
+              <p>Email: info@arslanyazilim.com</p>
+              <p>Telefon: +90 555 123 4567</p>
+              <p>Adres: İstanbul, Türkiye</p>
+            </div>
           </div>
         </section>
       </main>
 
-      <footer className="App-footer">
-        <p>&copy; 2024 Arslan Yazılım. Tüm hakları saklıdır.</p>
+      <footer className="footer">
+        <div className="container">
+          <p>&copy; 2024 Arslan Yazılım. Tüm hakları saklıdır.</p>
+        </div>
       </footer>
     </div>
   );
